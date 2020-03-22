@@ -30,7 +30,8 @@ go get github.com/symptog/jitsi-colibri-exporter
 # Run
 
 ```bash
-./jitsi-colibri-exporter -h                                                                                                                                                                       [14:56:02]
+./jitsi-colibri-exporter -h
+
 Usage of ./jitsi-colibri-exporter:
   -colibri.url string
     	Colibiri URL (default "http://127.0.0.1:8080/colibri/stats")
