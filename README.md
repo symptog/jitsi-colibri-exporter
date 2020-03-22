@@ -32,8 +32,6 @@ go get github.com/symptog/jitsi-colibri-exporter
 ```bash
 ./jitsi-colibri-exporter -h                                                                                                                                                                       [14:56:02]
 Usage of ./jitsi-colibri-exporter:
-  -colibri.update.interval int
-    	Colibiri update interval in seconds (default 30)
   -colibri.url string
     	Colibiri URL (default "http://127.0.0.1:8080/colibri/stats")
   -loglevel string
@@ -165,8 +163,5 @@ jitsi_colibri_used_memory 1832
 jitsi_colibri_videochannels 0
 # HELP jitsi_colibri_videostreams videostreams
 # TYPE jitsi_colibri_videostreams gauge
-jitsi_colibri_videostreams 0```
-
-
-
-
+jitsi_colibri_videostreams 0
+```
