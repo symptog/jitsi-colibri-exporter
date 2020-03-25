@@ -11,13 +11,13 @@ In `/etc/jitsi/videobridge/sip-communicator.properties`:
 
 ```
 org.jitsi.videobridge.ENABLE_STATISTICS=true
-org.jitsi.videobridge.STATISTICS_TRANSPORT=colibri
+org.jitsi.videobridge.STATISTICS_TRANSPORT=muc,colibri
 org.jitsi.videobridge.STATISTICS_INTERVAL=1000
 ```
 
 In `/etc/jitsi/videobridge/config`:
 
-* Add `--apis=rest` to `JVB_OPTS`
+* Add `--apis=rest,xmpp` to `JVB_OPTS`
 * Add `--add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED` to `JAVA_SYS_PROPS`
 
 
