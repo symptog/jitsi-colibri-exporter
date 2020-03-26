@@ -166,3 +166,14 @@ jitsi_colibri_videochannels 0
 # TYPE jitsi_colibri_videostreams gauge
 jitsi_colibri_videostreams 0
 ```
+
+# Docker container
+
+The Docker container is built via a multi-stage process.  The first process builds the
+binary (in a large container with lots of build dependencies), and then copies the binary
+to a much smaller container with just the necessary pieces to run.
+
+To build the Docker container, run:
+
+```docker build -t jitsi-colibri-exporter -f Dockerfile.multistage .```
+
